@@ -11,28 +11,77 @@
 
 /* Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain) */
 
-/* ######################### New code */
-/* Calendar container */
-.fc {
-    max-width: 900px;
-    margin: 0 auto;
+/* /1* ######################### New code *1/ */
+/* /1* Calendar container *1/ */
+/* .fc { */
+/*     max-width: 900px; */
+/*     margin: 0 auto; */
+/* } */
+
+/* /1* Header *1/ */
+/* .fc-toolbar { */
+/*     background-color: #f4f4f4; */
+/*     padding: 10px; */
+/* } */
+
+/* /1* Event background color *1/ */
+/* .fc-event { */
+/*     background-color: #007BFF; */
+/*     color: white; */
+/* } */
+
+/* /1* Hover effect for events *1/ */
+/* .fc-event:hover { */
+/*     background-color: #0056b3; */
+/* } */
+#calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-/* Header */
-.fc-toolbar {
-    background-color: #f4f4f4;
-    padding: 10px;
+#calendar-header button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
 }
 
-/* Event background color */
-.fc-event {
-    background-color: #007BFF;
-    color: white;
-}
-
-/* Hover effect for events */
-.fc-event:hover {
+#calendar-header button:hover {
     background-color: #0056b3;
+}
+
+#month-year {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#calendar td {
+    position: relative;
+    padding: 5px;
+}
+
+#calendar .pending {
+    background-color: yellow;
+    color: black;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 2px;
+}
+
+#calendar .booked {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 2px;
 }
 /* ######################### */
 

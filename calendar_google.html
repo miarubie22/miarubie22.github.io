@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Mia's Language Space</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/admin.css" />
+		<style>
+			/* Optional inline styles for calendar container */
+			.calendar-container {
+			    max-width: 900px; /* Adjust width as needed */
+			    margin: 0 auto; /* Center the calendar */
+			    padding: 20px; /* Add padding for spacing */
+			    background-color: #f4f4f4; /* Match your page background */
+			    border-radius: 8px; /* Rounded corners for a softer look */
+			    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+			}
+
+			iframe {
+			    width: 100%; /* Make the iframe responsive */
+			    height: 600px; /* Adjust height as needed */
+			    border: none; /* Remove border */
+			}
+		</style>
+	</head>
+
+	<body class="is-preload">
+		<div class="calendar-container" id="page-wrapper">
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">Mia's Language Space</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="#" class="icon solid fa-angle-down">Layouts</a>
+							<ul>
+								<li><a href="generic.html">Generic</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="elements.html">Elements</a></li>
+								<li>
+									<a href="#">Submenu</a>
+									<ul>
+										<li><a href="#">Option One</a></li>
+										<li><a href="#">Option Two</a></li>
+										<li><a href="#">Option Three</a></li>
+										<li><a href="#">Option Four</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a href="#" class="button">Sign Up</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Main -->
+		<main>
+			<section id="main" class="container medium">
+				<header>
+					<h2>Book a lesson</h2>
+					<p>All bookings and enquiries are to be made here.</p>
+				</header>
+
+				<!-- Embed Google Calendar -->
+				<iframe src="https://calendar.google.com/calendar/embed?src=b31aec95566d541c8ff436a157b00513dccfdca92c7f5c19a3b2de140477d0c9%40group.calendar.google.com&ctz=Europe%2FLondon"
+					style="border: 0"
+					width="800"
+					height="600"
+					frameborder="0"
+					scrolling="no">
+				</iframe>
+			</section>
+			
+			<section>
+				<div class="booking-form-container">
+					<h2>Book a Meeting</h2>
+						<form id="booking-form">
+							<div class="form-group-inline">
+						    		<div class="form-group">
+									<label for="first-name">First Name:</label>
+									<input type="text" id="first-name" name="first-name" required>
+						    		</div>
+						    		<div class="form-group">
+									<label for="last-name">Last Name:</label>
+									<input type="text" id="last-name" name="last-name" required>
+						    		</div>
+							</div>
+							<div class="form-group">
+						    		<label for="email">Email:</label>
+						    		<input type="email" id="email" name="email" required>
+							</div>
+							<div class="form-group">
+						    		<label for="date">Date:</label>
+						    		<input type="date" id="date" name="date" required>
+							</div>
+							<div class="form-group">
+						    		<label for="time">Time:</label>
+						    		<input type="time" id="time" name="time" required>
+							</div>
+							<button type="submit">Submit Booking Request</button>
+							<p id="message"></p>
+					    	</form>
+				</div>
+			</section>
+		</main>
+
+	    <!-- Scripts -->
+	    	<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/booking.js"></script>
+
+	</body>
+</html>
