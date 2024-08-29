@@ -11,6 +11,31 @@
 
 /* Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain) */
 
+/* ######################### New code */
+/* Calendar container */
+.fc {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+.fc-toolbar {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+/* Event background color */
+.fc-event {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Hover effect for events */
+.fc-event:hover {
+    background-color: #0056b3;
+}
+/* ######################### */
+
 	html, body, div, span, applet, object,
 	iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 	pre, a, abbr, acronym, address, big, cite,
