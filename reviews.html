@@ -46,8 +46,39 @@
 				<section id="main" class="container">
 					<header>
 						<h2>Reviews</h2>
-						<p>Browse here for reviews from past lessons on My Tutor.</p>
+						<p>Here you can leave a review or browse reviews from past lessons on My Tutor.</p>
 					</header>
+
+					<section class="box">
+						<h3>Leave a Review</h3>
+						<form method="post" action="#">
+							<div class="row gtr-uniform gtr-50">
+								<div class="col-6 col-12-mobilep">
+									<input type="text" name="name" id="name" value="" placeholder="Name" />
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<input type="email" name="email" id="email" value="" placeholder="Email" />
+								</div>
+								<div class="col-6 col-12-narrower">
+									<input type="checkbox" id="anonymous" name="anonymous" checked required>
+									<label for="anonymous">I want my review to be anonymous</label>
+								</div>
+								<div class="col-6 col-12-narrower">
+									<input type="checkbox" id="human" name="human" required >
+									<label for="human">I am a human and not a robot</label>
+								</div>
+								<div class="col-12">
+									<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Submit Review" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+
 					<div class="box">
 						<!-- <span class="image featured"><img src="images/pic01.jpg" alt="" /></span> -->
 						<h3>Anonymous student reviews</h3>
