@@ -135,6 +135,24 @@ input[type="time"]:focus {
     box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Add shadow to indicate focus */
 }
 
+/* Ensure the iframe container is responsive */
+.iframe-container {
+    position: relative;
+    width: 100%; /* Full width */
+    padding-bottom: 56.25%; /* Aspect ratio for 16:9 */
+    height: 0; /* Collapse height */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Style the iframe to fill the container */
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0; /* Remove default border */
+}
 /* ######################### */
 
 	html, body, div, span, applet, object,
