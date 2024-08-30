@@ -10,24 +10,24 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/admin.css" />
-		<style>
-			/* Optional inline styles for calendar container */
-			.calendar-container {
-			    max-width: 900px; /* Adjust width as needed */
-			    margin: 0 auto; /* Center the calendar */
-			    padding: 20px; /* Add padding for spacing */
-			    background-color: #f4f4f4; /* Match your page background */
-			    border-radius: 8px; /* Rounded corners for a softer look */
-			    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-			}
+		<!-- <link rel="stylesheet" href="assets/css/admin.css" /> -->
+		<!-- <style> -->
+		<!-- 	/* Optional inline styles for calendar container */ -->
+		<!-- 	.calendar-container { -->
+		<!-- 	    max-width: 900px; /* Adjust width as needed */ -->
+		<!-- 	    margin: 0 auto; /* Center the calendar */ -->
+		<!-- 	    padding: 20px; /* Add padding for spacing */ -->
+		<!-- 	    background-color: #f4f4f4; /* Match your page background */ -->
+		<!-- 	    border-radius: 8px; /* Rounded corners for a softer look */ -->
+		<!-- 	    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */ -->
+		<!-- 	} -->
 
-			iframe {
-			    width: 100%; /* Make the iframe responsive */
-			    height: 600px; /* Adjust height as needed */
-			    border: none; /* Remove border */
-			}
-		</style>
+		<!-- 	iframe { -->
+		<!-- 	    width: 100%; /* Make the iframe responsive */ -->
+		<!-- 	    height: 600px; /* Adjust height as needed */ -->
+		<!-- 	    border: none; /* Remove border */ -->
+		<!-- 	} -->
+		<!-- </style> -->
 	</head>
 
 	<body class="is-preload">
@@ -77,14 +77,15 @@
 				<!-- 	frameborder="0" -->
 				<!-- 	scrolling="no"> -->
 				<!-- </iframe> -->
-				<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FLondon&bgcolor=%23ffffff&title=Mia's%20Availability&src=YjMxYWVjOTU1NjZkNTQxYzhmZjQzNmExNTdiMDA1MTNkY2NmZGNhOTJjN2Y1YzE5YTNiMmRlMTQwNDc3ZDBjOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23D81B60"
-					style="border-width:0"
-					width="1000"
-					height="600"
-					frameborder="0"
-					scrolling="no">
-				</iframe>
-			</section>
+				<div class="box">
+					<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=Europe%2FLondon&bgcolor=%23ffffff&title=Mia's%20Availability&src=YjMxYWVjOTU1NjZkNTQxYzhmZjQzNmExNTdiMDA1MTNkY2NmZGNhOTJjN2Y1YzE5YTNiMmRlMTQwNDc3ZDBjOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23D81B60"
+						style="border-width:0"
+						width="800"
+						height="600"
+						frameborder="0"
+						scrolling="no">
+					</iframe>
+				</div>
 			
 			<!-- <section> -->
 			<!-- 	<div class="booking-form-container"> -->
@@ -115,38 +116,47 @@
 			<!-- 		    	</form> -->
 			<!-- 	</div> -->
 			<!-- </section> -->
-			<section class="box">
-				<div class="col-12">
-					<h2>Book a Lesson or Free Meeting</h2>
-					<form method="post" action="#" id="booking-form">
-						<div class="row gtr-uniform gtr-50">
-							<div class="col-6 col-12-mobilep">
-								<input type="text" name="first-name" id="first-name" value="" placeholder="First Name" required/>
+				<!-- <section id="main" class="container"> -->
+				<section class="box">
+				<!-- <section class="box"> -->
+					<!-- <div class="col-12"> -->
+					<!-- <header> -->
+					<!-- 	<h3>Book a Lesson or Free Meeting</h3> -->
+					<!-- </header> -->
+
+					<h3>Book a Lesson or Free Meeting</h3>
+					<div class="booking-form-container">
+						<form id="booking-form">
+							<div class="row gtr-uniform gtr-50">
+								<div class="col-6 col-12-mobilep">
+									<input type="text" name="first-name" id="first-name" value="" placeholder="First Name" required/>
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<input type="text" name="last-name" id="last-name" value="" placeholder="Last Name" required/>
+								</div>
+								<div class="col-12">
+									<input type="email" name="email" id="email" value="" placeholder="Email" required/>
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<input type="date" name="date" id="date" value="" required/>
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<input type="time" name="time" id="time" value="" required/>
+								</div>
+								<div class="col-6 col-12-narrower">
+									<input type="checkbox" id="human" name="human" required>
+									<label for="human">I am a human and not a robot</label>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Submit Request" /></li>
+									</ul>
+								</div>
 							</div>
-							<div class="col-6 col-12-mobilep">
-								<input type="text" name="last-name" id="last-name" value="" placeholder="Last Name" required/>
-							</div>
-							<div class="col-12">
-								<input type="email" name="email" id="email" value="" placeholder="Email" required/>
-							</div>
-							<div class="col-6 col-12-mobilep">
-								<input type="date" name="date" id="date" value="" required/>
-							</div>
-							<div class="col-6 col-12-mobilep">
-								<input type="time" name="time" id="time" value="" required/>
-							</div>
-							<div class="col-6 col-12-narrower">
-								<input type="checkbox" id="human" name="human" required>
-								<label for="human">I am a human and not a robot</label>
-							</div>
-							<div class="col-12">
-								<ul class="actions">
-									<li><input type="submit" value="Submit Request" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</div>
+						</form>
+						<div id="message" </div>
+					</div>
+				</section>
 			</section>
 		</main>
 

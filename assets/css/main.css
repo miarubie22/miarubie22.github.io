@@ -107,8 +107,34 @@ content: close-quote;
 font-weight: bold;
 font-size:35px;
 color:#90b0ba;
-
 }
+
+#success-message {
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    display: none;
+}
+
+input[type="date"],
+input[type="time"] {
+    border: 1px solid #ccc; /* Light gray border color */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 8px; /* Space inside the input box */
+    font-size: 1em; /* Adjust font size as needed */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visual depth */
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effect */
+}
+
+/* Add a focus effect to enhance user experience */
+input[type="date"]:focus,
+input[type="time"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25); /* Add shadow to indicate focus */
+}
+
 /* ######################### */
 
 	html, body, div, span, applet, object,
