@@ -35,28 +35,28 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1><a href="index.html">Mia's Language Space</h1>
+				<h1><a href="index.html">Tutor Mia</h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li>
-							<a href="#" class="icon solid fa-angle-down">Layouts</a>
+							<a href="#" class="icon solid fa-angle-down">Menu</a>
 							<ul>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li>
-									<a href="#">Submenu</a>
-									<ul>
-										<li><a href="#">Option One</a></li>
-										<li><a href="#">Option Two</a></li>
-										<li><a href="#">Option Three</a></li>
-										<li><a href="#">Option Four</a></li>
-									</ul>
-								</li>
+								<li><a href="about_me.html">About Me</a></li>
+								<li><a href="prices.html">Prices</a></li>
+								<li><a href="reviews.html">Reviews</a></li>
+								<!-- <li> -->
+								<!-- 	<a href="#">Submenu</a> -->
+								<!-- 	<ul> -->
+								<!-- 		<li><a href="#">Option One</a></li> -->
+								<!-- 		<li><a href="#">Option Two</a></li> -->
+								<!-- 		<li><a href="#">Option Three</a></li> -->
+								<!-- 		<li><a href="#">Option Four</a></li> -->
+								<!-- 	</ul> -->
+								<!-- </li> -->
 							</ul>
 						</li>
-						<li><a href="#" class="button">Sign Up</a></li>
+						<li><a href="#" class="button">Book a Lesson</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -79,35 +79,66 @@
 				</iframe>
 			</section>
 			
-			<section>
-				<div class="booking-form-container">
+			<!-- <section> -->
+			<!-- 	<div class="booking-form-container"> -->
+			<!-- 		<h2>Book a Meeting</h2> -->
+			<!-- 			<form id="booking-form"> -->
+							<!-- <div class="form-group"> -->
+							<!-- 	<label for="first-name">First Name:</label> -->
+							<!-- 	<input type="text" id="first-name" name="first-name" required> -->
+							<!-- </div> -->
+			<!-- 				<div class="form-group"> -->
+			<!-- 					<label for="last-name">Last Name:</label> -->
+			<!-- 					<input type="text" id="last-name" name="last-name" required> -->
+			<!-- 				</div> -->
+			<!-- 				<div class="form-group"> -->
+			<!-- 			    		<label for="email">Email:</label> -->
+			<!-- 			    		<input type="email" id="email" name="email" required> -->
+			<!-- 				</div> -->
+			<!-- 				<div class="form-group"> -->
+			<!-- 			    		<label for="date">Date:</label> -->
+			<!-- 			    		<input type="date" id="date" name="date" required> -->
+			<!-- 				</div> -->
+			<!-- 				<div class="form-group"> -->
+			<!-- 			    		<label for="time">Time:</label> -->
+			<!-- 			    		<input type="time" id="time" name="time" required> -->
+			<!-- 				</div> -->
+			<!-- 				<button type="submit">Submit Booking Request</button> -->
+			<!-- 				<p id="message"></p> -->
+			<!-- 		    	</form> -->
+			<!-- 	</div> -->
+			<!-- </section> -->
+			<section class="box">
+				<div class="col-12">
 					<h2>Book a Meeting</h2>
-						<form id="booking-form">
-							<div class="form-group-inline">
-						    		<div class="form-group">
-									<label for="first-name">First Name:</label>
-									<input type="text" id="first-name" name="first-name" required>
-						    		</div>
-						    		<div class="form-group">
-									<label for="last-name">Last Name:</label>
-									<input type="text" id="last-name" name="last-name" required>
-						    		</div>
+					<form method="post" action="#" id="booking-form">
+						<div class="row gtr-uniform gtr-50">
+							<div class="col-6 col-12-mobilep">
+								<input type="text" name="first-name" id="first-name" value="" placeholder="First Name" required/>
 							</div>
-							<div class="form-group">
-						    		<label for="email">Email:</label>
-						    		<input type="email" id="email" name="email" required>
+							<div class="col-6 col-12-mobilep">
+								<input type="text" name="last-name" id="last-name" value="" placeholder="Last Name" required/>
 							</div>
-							<div class="form-group">
-						    		<label for="date">Date:</label>
-						    		<input type="date" id="date" name="date" required>
+							<div class="col-12">
+								<input type="email" name="email" id="email" value="" placeholder="Email" required/>
 							</div>
-							<div class="form-group">
-						    		<label for="time">Time:</label>
-						    		<input type="time" id="time" name="time" required>
+							<div class="col-6 col-12-mobilep">
+								<input type="date" name="date" id="date" value="" required/>
 							</div>
-							<button type="submit">Submit Booking Request</button>
-							<p id="message"></p>
-					    	</form>
+							<div class="col-6 col-12-mobilep">
+								<input type="time" name="time" id="time" value="" required/>
+							</div>
+							<div class="col-6 col-12-narrower">
+								<input type="checkbox" id="human" name="human" required>
+								<label for="human">I am a human and not a robot</label>
+							</div>
+							<div class="col-12">
+								<ul class="actions">
+									<li><input type="submit" value="Submit Request" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
 				</div>
 			</section>
 		</main>
